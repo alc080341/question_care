@@ -1,0 +1,427 @@
+/*Default styling*/
+
+body
+{
+	font-family: "Montserrat", sans-serif;
+	margin: 0px;
+}
+
+h2
+{
+	color:rgb(35, 117, 181);
+}
+
+a
+{
+	color:rgb(35, 117, 181);
+	text-decoration: none;
+	outline: 0;
+}
+
+input
+{
+	border: 1px solid rgb(35, 117, 181);
+	height: 23px;
+	padding: 10px;
+	margin: 5px;
+}
+
+input[type=text]
+{
+	margin: 5px;
+}
+input[type=number]
+{
+	margin: 5px;
+}
+
+
+select
+{
+	width: 120px;
+	padding: 5px;
+	font-size: 16px;
+	line-height: 1;
+	border: 1px solid rgb(35, 117, 181);
+	height: 44px;
+	background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #fff;
+	-webkit-appearance: none;
+	background-position-x: 90px;
+}
+
+
+
+
+button
+{
+	border: none;
+	padding: 10px;
+	margin: 5px;
+	min-width: 80px;
+	color: white;
+	outline: 0;
+}
+
+
+.admin_functions
+{
+	padding-top: 25px;
+}
+
+.def_button
+{
+
+	background-color: rgb(144, 219, 225);
+}
+
+.btn_hide
+{
+	display: none;
+}
+
+.btn_show
+{
+	background-color: rgb(144, 219, 225);
+}
+
+
+.def_button:hover
+{
+	background-color: rgb(35, 117, 181);
+}
+
+
+.def_container
+{
+	box-shadow: 0 1em .5em grey;   
+	border: 2px solid #dcdcdc;
+	width: 95%;
+	min-height: 400px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+
+.def_container ul
+{
+	list-style-type: none;
+}
+
+.def_inner_container
+{
+	border-top: 2px solid #dcdcdc;
+}
+
+.def_popup_hide
+{
+	display: none;
+}
+
+
+.def_popup_show
+{
+	display: block;
+	background-color: #fff;
+	text-align: center;
+	position: fixed;
+	z-index: 1;
+	margin: auto;
+	padding: 30px;
+	top:50%;
+	left:50%;
+	width:400px;  
+	min-height:400px;  
+	margin-left:-200px;   
+	margin-top:-200px; 
+	border: 1px solid black;  
+}
+
+.def_popup_show > div
+{
+	min-height: 200px;
+}
+
+.def_popup_background
+{
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+/*Styling associated with Header component*/
+
+.header
+{
+	padding-top: 20px;
+	margin: auto;
+	text-align: center;
+}
+
+.header_nav
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 2px solid rgb(244, 244, 244);
+	border-bottom: 2px solid rgb(244, 244, 244);
+}
+
+.header_nav div
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
+	width: 25%;
+}
+
+.header_nav a 
+{
+	color: #4c4e51;
+}
+
+.header_nav a:hover 
+{
+	color: rgb(153, 153, 153);
+}
+
+.header img
+{
+	width: 30%;
+}
+
+
+
+
+
+/* Styling associated with Viewquestionnaireslist component*/
+
+.view_questionnaires_list
+{
+	padding-top: 50px; 
+}
+
+.view_questionnaires_list ul
+{
+	text-align: left;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.view_questionnaires_list li
+{
+	width: 48%;
+	display: inline-block;
+	padding: 10px;
+}
+
+.view_questionnaires_list div
+{
+	background-color: white;
+	border: 1px solid #dcdcdc;
+	min-height: 100px;
+	padding: 20px;
+	box-shadow: 0 1em .5em grey;   
+}
+
+
+
+@keyframes no_questionnaires {
+  0%   {background-color:white; left:0px; top:0px;}
+  100% {background-color:rgb(144, 219, 225); left:35%; top:50px;}
+}
+
+/* The element to apply the animation to */
+.no_ques_message {
+  width: 30%;
+  min-height: 100px;
+  position: relative;
+  background-color: rgb(144, 219, 225);
+  animation-name: no_questionnaires;
+  animation-duration: 2s;
+  left: 35%;
+  top: 50px;
+  padding: 10px;
+  color: white;
+}
+
+
+
+
+
+/* Styling associated with Viewquestionnaire && Displayquestions component */
+
+.questions_list_show
+{
+	display: block;
+}
+
+.questions_list_hide
+{
+	display: none;
+}
+
+
+.questions_list_item > div
+{
+	display: inline-block;
+	width: 45%;
+	text-align: center;
+	padding: 15px;
+}
+
+.answer_button
+{
+	background-color:rgb(144, 219, 225);
+}
+
+.no_answer_button
+{
+	color: black;
+	background-color: white;
+}
+
+.result_area_show
+{
+	display: block;
+	height: 100px;
+}
+
+.result_area_hide
+{
+	display: none;
+}
+
+
+.btn_hide
+{
+	display: none;
+}
+
+.btn_show
+{
+	background-color: rgb(144, 219, 225);
+}
+
+
+/* Styling associated with Editquestionnaires && Editquestions components*/
+
+
+.edit_questionnaire
+{
+	min-height: 250px;
+	border-bottom: 1px solid #dcdcdc;
+	overflow: hidden;
+}
+
+.editable_question_item
+{
+	background-color: rgb(35, 117, 181);
+	width: 95%;
+	margin-top: 10px;
+	overflow: none;
+	min-height: 80px;
+}
+
+
+.editable_question_item > div
+{
+	vertical-align: top;
+	color: white;
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(35, 117, 181);
+}
+
+
+/*Smaller devices*/
+
+@media only screen and (max-width: 960px)  
+{
+	.view_questionnaires_list li
+	{
+		width: 98%;
+	}
+
+}
+
+
+@media only screen and (max-width: 701px)  
+{
+
+	@keyframes no_questionnaires {
+  	0%   {background-color:white; left:-50px; top:0px;}
+  	100% {background-color:rgb(144, 219, 225); left:6%; top:0px;}
+	}
+
+	.no_ques_message 
+	{
+ 		width: 80%;
+ 		left: 6%;
+ 		padding: 15px;
+	}
+
+	.def_popup_show
+	{
+		width:75%;  
+		left:15px; 
+		margin-left: 0px;
+		position: fixed;
+	}
+	.view_questionnaires_list li
+	{
+		width: 95%;
+	}
+
+	.questions_list_item > div
+	{
+		display: inline-block;
+		width: 85%;
+		text-align: left;
+	}
+	.header_nav
+	{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background: rgb(244, 244, 244);
+	}
+
+	.header_nav div
+	{
+		vertical-align:top;
+		background: rgb(35, 117, 181);
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 30%;
+		margin: 2px;
+		min-height: 30px;
+		font-size: 10px;
+	}
+
+	.header_nav a
+	{
+		color: white;
+	}
+	.header_nav a:hover
+	{
+		color: white;
+	}
+
+	.header img
+	{
+		width: 60%;
+	}
+
+
+}
